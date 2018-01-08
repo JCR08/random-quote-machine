@@ -1,4 +1,18 @@
 body {
   background: blue; }
+  body div.quote {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: white;
+    height: 250px;
+    margin: auto;
+    width: 60%; }
+    body div.quote #quote {
+      padding: 1rem 2rem;
+      text-align: center; }
+    body div.quote #author {
+      padding: 0 2rem 1rem 0;
+      text-align: right; }
 
 /*# sourceMappingURL=style.css.map */
