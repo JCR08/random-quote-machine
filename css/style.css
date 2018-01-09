@@ -5,7 +5,6 @@ body {
     justify-content: center;
     flex-direction: column;
     background: white;
-    height: 250px;
     margin: auto;
     width: 60%; }
     body div.quote #quote {
