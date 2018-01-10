@@ -2,10 +2,9 @@ function getQuote(){
   $.get("https://random-quote-generator.herokuapp.com/api/quotes/random", function(data){
     var quote = data.quote;
     var author = data.author;
-    console.log(author);
     $("#tweet").attr("href", tweet(quote, author));
     $('#quote').text(quote);
-    $('#author').text(author);
+    $('#author').text(`- ${author}`);
   })
 }
 
@@ -15,6 +14,7 @@ function tweet(quote, author){
   return twitterURL;
 }
 
-$("#newQuote").click(getQuote);
+$("#newQuoteDesktop").click(getQuote);
+$("#newQuoteMobile").click(getQuote);
 
 getQuote();

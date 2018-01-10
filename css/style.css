@@ -5,13 +5,43 @@ body {
     justify-content: center;
     flex-direction: column;
     background: white;
-    margin: auto;
-    width: 60%; }
-    body div.quote #quote {
-      padding: 1rem 2rem;
+    border-radius: 2%;
+    min-height: 450px;
+    margin: 5% auto auto auto;
+    padding: 2rem;
+    width: 50%; }
+    body div.quote div.quote-text {
+      font-size: 3rem;
+      margin: auto;
+      width: 75%;
       text-align: center; }
+      body div.quote div.quote-text i {
+        font-size: 2.5rem; }
     body div.quote #author {
+      font-size: 2rem;
       padding: 0 2rem 1rem 0;
       text-align: right; }
+    body div.quote div.buttons {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      padding: 25px; }
+      body div.quote div.buttons #newQuoteMobile {
+        display: none; }
+      body div.quote div.buttons button {
+        background-color: blue;
+        color: white;
+        width: 33%; }
+      body div.quote div.buttons a i {
+        color: blue; }
+    @media (max-width: 992px) {
+      body div.quote div.buttons {
+        display: flex;
+        flex-direction: column; }
+        body div.quote div.buttons #newQuoteMobile {
+          display: block;
+          margin-bottom: 1rem; }
+        body div.quote div.buttons #newQuoteDesktop {
+          display: none; } }
 
 /*# sourceMappingURL=style.css.map */

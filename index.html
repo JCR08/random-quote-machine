@@ -5,18 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Random Quote Machine</title>
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="quote">
-    <h1 id="quote"></h1>
-    <h2 id="author"></h2>
-    <button id="newQuote">New Quote</button>
-    <a id="tweet" class="button" target="_blank">Tweet</a>
+    <div class="quote-text">
+      <i class="fa fa-quote-left" aria-hidden="true"></i>
+      <span id="quote"></span>
+    </div>
+
+    <span id="author"></span>
+    <div class="buttons">
+      <button id="newQuoteMobile" type="button" class="btn">New Quote</button>
+      <a id="tweet" class="button" target="_blank"><i class="fa fa-3x fa-twitter-square" aria-hidden="true"></i></a>
+      <button id="newQuoteDesktop" type="button" class="btn">New Quote</button>
+    </div>
   </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
 <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<script src="https://use.fontawesome.com/932c8ff4f8.js"></script>
 <script type="text/javascript" src="script.js"></script>
 </html>

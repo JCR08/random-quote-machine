@@ -10,18 +10,64 @@ body{
   div.quote{
     @include vertical-center;
     background: white;
-    // height: 250px;
-    margin: auto;
-    width: 60%;
+    border-radius: 2%;
+    min-height: 450px;
+    margin: 5% auto auto auto;
+    padding: 2rem;
+    width: 50%;
 
-    #quote{
-      padding: 1rem 2rem;
+    div.quote-text{
+      font-size: 3rem;
+      margin: auto;
+      width: 75%;
       text-align: center;
+
+      i{
+        font-size: 2.5rem;
+      }
     }
 
     #author{
+      font-size: 2rem;
       padding: 0 2rem 1rem 0;
       text-align: right;
+    }
+
+    div.buttons{
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      padding: 25px;
+
+      #newQuoteMobile{
+        display: none;
+      }
+
+      button{
+        background-color: blue;
+        color: white;
+        width: 33%;
+      }
+
+      a i{
+        color: blue;
+      }
+    }
+
+    @media (max-width: 992px){
+      div.buttons{
+        display:flex;
+        flex-direction: column;
+
+        #newQuoteMobile{
+          display: block;
+          margin-bottom: 1rem;
+        }
+
+        #newQuoteDesktop{
+          display: none;
+        }
+      }
     }
   }
 }
