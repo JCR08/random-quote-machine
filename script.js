@@ -9,7 +9,6 @@ function getQuote(){
     $('#author').text(`- ${author}`);
   })
   var color = colors[Math.floor(Math.random() * colors.length)];
-  console.log(color);
   $("body").animate({backgroundColor: color, color: color}, "slow");
   $("button").animate({backgroundColor: color}, "slow");
   $("i").animate({color: color}, "slow");
